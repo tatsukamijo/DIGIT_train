@@ -1,7 +1,8 @@
 # DIGIT_train
 
 This is a repository including a sample code for creating a custom touch detection model 
-for a [DIDIT](https://digit.ml/#:~:text=What%20is%20DIGIT%3F,by%20playing%20the%20video%20below.) sensor.
+for a [DIDIT](https://digit.ml/#:~:text=What%20is%20DIGIT%3F,by%20playing%20the%20video%20below.) sensor.  
+See also: [PyTouch](https://github.com/facebookresearch/PyTouch)
 
 # Requirements
 It requires `pytouch`, `digit-interface`, `torch`, `torchvision` to be install in your python.  
