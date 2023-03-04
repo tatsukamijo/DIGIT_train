@@ -1,4 +1,4 @@
-# Digit_train
+# DIGIT_train
 
 This is a repository including a sample code for creating a custom touch detection model 
 for a [DIDIT](https://digit.ml/#:~:text=What%20is%20DIGIT%3F,by%20playing%20the%20video%20below.) sensor.
@@ -9,7 +9,7 @@ Install with `pip install` if not.
 
 # Usage
 ## 1. Make a dataset
-1. Make directory as follows:`DIGIT_train/Dxxxx/touch`,`DIGIT_train/Dxxxx/notouch` and `DIGIT_train/Dxxxx/weight`  
+1. Make directories to save the data and model as follows:`DIGIT_train/Dxxxx/touch`,`DIGIT_train/Dxxxx/notouch` and `DIGIT_train/Dxxxx/weight`  
 2. Change `DIGIT_ID` and the path to yours in `make_data.py`
 3. Run `make_data.py` to make your dataset  
 Each frame will be saved to the specified directory while executing.  
