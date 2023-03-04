@@ -10,7 +10,7 @@ Install with `pip install` if not.
 
 # Usage
 ## 1. Make a dataset
-1. Make directories to save the data and model as follows:`DIGIT_train/Dxxxx/touch`,`DIGIT_train/Dxxxx/notouch` and `DIGIT_train/weight`   
+1. Change the directory name `Dxxxx` to your DIGIT id in `DIGIT_train/Dxxxx/touch` and `DIGIT_train/Dxxxx/notouch`   
 2. Change `DIGIT_ID` and the path to yours in `make_data.py`
 3. Run `make_data.py` to make your dataset  
 Each frame will be saved to the specified directory while runnig.  
