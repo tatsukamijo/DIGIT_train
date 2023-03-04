@@ -12,7 +12,7 @@ Install with `pip install` if not.
 ## 1. Make a dataset
 1. Change the directory name `Dxxxx` to your DIGIT id in `DIGIT_train/Dxxxx`   
 2. Change `DIGIT_ID` and the path to yours in `make_data.py`
-3. Run `make_data.py` to make your dataset  
+3. Run `make_data.py` to make your dataset in `./Dxxxx/touch` and `./Dxxxx/notouch`  
 Each frame will be saved to the specified directory while runnig.  
 Make sure to create various touching situations.
 To achieve this, I changed the touching situation for each set of 200 or 300 frames.
