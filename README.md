@@ -5,7 +5,7 @@ for a [DIDIT](https://digit.ml/#:~:text=What%20is%20DIGIT%3F,by%20playing%20the%
 See also: [PyTouch](https://github.com/facebookresearch/PyTouch)
 
 # Requirements
-It requires `pytouch`, `digit-interface`, `torch`, `torchvision` to be install in your python.  
+It requires `pytouch`, `digit-interface`, `torch`, `torchvision` to be installed in your python.  
 Install with `pip install` if not.
 
 # Usage
