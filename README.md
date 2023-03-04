@@ -11,15 +11,19 @@ Install with `pip install` if not.
 # Usage
 ## 1. Make a dataset
 1. Make directories to save the data and model as follows:`DIGIT_train/Dxxxx/touch`,`DIGIT_train/Dxxxx/notouch` and `DIGIT_train/Dxxxx/weight`  
+After making dataset, the directory should look like this:
 .
 ├── Dxxx  
 │   ├── notouch  
+│   │   └── notouch.png  
 │   └── touch  
+│       └── touch.png  
 ├── README.md  
 ├── make_data.py  
 ├── model.py  
-└── realtime_touchdetect.py  
-
+├── realtime_touchdetect.py  
+└── weight  
+    └── hoge.pth  
 2. Change `DIGIT_ID` and the path to yours in `make_data.py`
 3. Run `make_data.py` to make your dataset  
 Each frame will be saved to the specified directory while runnig.  
