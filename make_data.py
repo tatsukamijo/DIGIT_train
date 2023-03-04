@@ -4,6 +4,9 @@ from digit_interface.digit import Digit
 import cv2
 import time
 
+# Set id for your DIGIT e.g. D20221
+DIGIT_ID = "YOUR_DIGIT_ID"
+
 def make_datasets():
     count = 0
     while True:
@@ -19,7 +22,7 @@ def make_datasets():
             break
 
 if __name__ == "__main__":
-    digit = Digit("Dxxxx", "digit_name")
+    digit = Digit(f"{DIGIT_ID}", "digit_name")
     digit.connect()
     digit.set_intensity(Digit.LIGHTING_MIN)
     time.sleep(1)

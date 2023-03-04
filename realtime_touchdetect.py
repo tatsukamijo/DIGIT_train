@@ -9,7 +9,10 @@ import torch.nn.functional as F
 import cv2
 import time
 
-digit = Digit("Dxxxx", "Left Gripper")
+# Set id for your DIGIT e.g. D20221
+DIGIT_ID = "YOUR_DIGIT_ID"
+
+digit = Digit(DIGIT_ID, "Left Gripper")
 digit.connect()
 # Change LED illumination intensity
 digit.set_intensity(Digit.LIGHTING_MIN)
@@ -57,7 +60,7 @@ while True:
     import time
     start = time.time()
     frame = digit.get_frame()[:, :, ::-1]
-    # digit.save_frame("test.png")
+    digit.save_frame("test.png")
     source = ImageHandler("test.png")   
     source = transform(source.img)
     output = model(source)

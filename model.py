@@ -5,11 +5,11 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
 
-# Set here for your DIGIT
-xxxx = "Dxxxx"
+# Set id for your DIGIT e.g. D20221
+DIGIT_ID = "YOUR_DIGIT_ID"
 image_size = 224
 
-all_image_dir = f'./D{xxxx}/'
+all_image_dir = f'./{DIGIT_ID}/'
 
 data_transform = {
     'train': transforms.Compose([
@@ -104,7 +104,7 @@ for epoch in range(num_epochs):
         epoch_accuracy = epoch_corrects.double() / len(dataloaders_dict[phase].dataset)
 
         print('{} Loss: {:.4f} Acc: {:.4f}'.format(phase, epoch_loss, epoch_accuracy))
-        torch.save(net.state_dict(), f'weight/v2/D{xxxx}-epoch{epoch}.pth')
+        torch.save(net.state_dict(), f'weight/{DIGIT_ID}-epoch{epoch}.pth')
         
 # Save full model
-torch.save(net, f'weight/D20261-full.pth')
+torch.save(net, f'weight/{DIGIT_ID}-full.pth')
